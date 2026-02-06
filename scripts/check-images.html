@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Path Checker - POKEMON9 Casino</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #0a1628;
+            color: #fff;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #ffd700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .section {
+            background: #1a1a2e;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ffd700/20;
+        }
+        .section h2 {
+            color: #ffd700;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .image-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: #0f1f3a;
+            border-radius: 6px;
+            border-left: 4px solid transparent;
+        }
+        .image-item.loading {
+            border-left-color: #3b4cca;
+        }
+        .image-item.success {
+            border-left-color: #00ff00;
+        }
+        .image-item.error {
+            border-left-color: #ff0000;
+        }
+        .image-preview {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            background: #0a1628;
+            border-radius: 4px;
+            margin-right: 15px;
+            border: 1px solid #333;
+        }
+        .image-info {
+            flex: 1;
+        }
+        .image-path {
+            font-family: 'Courier New', monospace;
+            color: #ffd700;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .image-status {
+            font-size: 12px;
+            color: #999;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .status-loading {
+            background: #3b4cca;
+            color: #fff;
+        }
+        .status-success {
+            background: #00ff00;
+            color: #000;
+        }
+        .status-error {
+            background: #ff0000;
+            color: #fff;
+        }
+        .summary {
+            background: #1a2942;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .summary-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+        }
+        button {
+            background: #ffd700;
+            color: #0a1628;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #ffed4e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ Image Path Checker - POKEMON9 Casino</h1>
+        
+        <div class="summary">
+            <div class="summary-stats">
+                <div class="stat">
+                    <div class="stat-number" id="total-count">0</div>
+                    <div class="stat-label">Total Images</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="success-count" style="color: #00ff00;">0</div>
+                    <div class="stat-label">✅ Success</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="error-count" style="color: #ff0000;">0</div>
+                    <div class="stat-label">❌ Error</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="loading-count" style="color: #3b4cca;">0</div>
+                    <div class="stat-label">⏳ Loading</div>
+                </div>
+            </div>
+            <button onclick="checkAllImages()">🔄 Re-check All Images</button>
+        </div>
+
+        <div class="section">
+            <h2>📁 Header & Footer Images</h2>
+            <div id="header-footer-images"></div>
+        </div>
+
+        <div class="section">
+            <h2>🎮 Game Images</h2>
+            <div id="game-images"></div>
+        </div>
+
+        <div class="section">
+            <h2>🎁 Bonus & Promotion Images</h2>
+            <div id="bonus-images"></div>
+        </div>
+
+        <div class="section">
+            <h2>📝 Registration & Login Images</h2>
+            <div id="registration-images"></div>
+        </div>
+
+        <div class="section">
+            <h2>💳 Payment Images</h2>
+            <div id="payment-images"></div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Favicon & Icons</h2>
+            <div id="icon-images"></div>
+        </div>
+    </div>
+
+    <script>
+        const imagePaths = {
+            'header-footer': [
+                { path: '/logo/pokemon9-logo.png', name: 'POKEMON9 Logo' },
+                { path: '/footer-banner.png', name: 'Footer Banner' },
+            ],
+            'game': [
+                { path: '/slot-games.jpg', name: 'Slot Games' },
+                { path: '/table-games.jpg', name: 'Table Games' },
+                { path: '/jili.png', name: 'JILI Game' },
+                { path: '/booongo.png', name: 'BOOONGO Game' },
+                { path: '/ace333.png', name: 'ACE333 Game' },
+            ],
+            'bonus': [
+                { path: '/welcomeBonus.jpg', name: 'Welcome Bonus' },
+                { path: '/promotions.jpg', name: 'Promotions' },
+            ],
+            'registration': [
+                { path: '/register.jpg', name: 'Registration Form' },
+                { path: '/login.jpg', name: 'Login Page' },
+            ],
+            'payment': [
+                { path: '/transaction.jpg', name: 'Transaction Panel' },
+            ],
+            'icon': [
+                { path: '/favicon.ico', name: 'Favicon ICO' },
+                { path: '/favicon.svg', name: 'Favicon SVG' },
+                { path: '/apple-touch-icon.png', name: 'Apple Touch Icon' },
+                { path: '/web-app-manifest-192x192.png', name: 'Web App Icon 192x192' },
+                { path: '/web-app-manifest-512x512.png', name: 'Web App Icon 512x512' },
+            ],
+        };
+
+        let stats = {
+            total: 0,
+            success: 0,
+            error: 0,
+            loading: 0,
+        };
+
+        function createImageItem(path, name, category) {
+            const item = document.createElement('div');
+            item.className = 'image-item loading';
+            item.id = `img-${category}-${path.replace(/[^a-zA-Z0-9]/g, '-')}`;
+            
+            const img = document.createElement('img');
+            img.className = 'image-preview';
+            img.src = path;
+            img.alt = name;
+            img.onload = () => {
+                item.className = 'image-item success';
+                const status = item.querySelector('.status-badge');
+                if (status) {
+                    status.className = 'status-badge status-success';
+                    status.textContent = '✅ Loaded';
+                }
+                stats.loading--;
+                stats.success++;
+                updateStats();
+            };
+            img.onerror = () => {
+                item.className = 'image-item error';
+                const status = item.querySelector('.status-badge');
+                if (status) {
+                    status.className = 'status-badge status-error';
+                    status.textContent = '❌ Not Found';
+                }
+                stats.loading--;
+                stats.error++;
+                updateStats();
+            };
+
+            const info = document.createElement('div');
+            info.className = 'image-info';
+            
+            const pathDiv = document.createElement('div');
+            pathDiv.className = 'image-path';
+            pathDiv.textContent = path;
+            
+            const statusDiv = document.createElement('div');
+            statusDiv.className = 'image-status';
+            statusDiv.innerHTML = `${name} <span class="status-badge status-loading">⏳ Loading...</span>`;
+            
+            info.appendChild(pathDiv);
+            info.appendChild(statusDiv);
+            
+            item.appendChild(img);
+            item.appendChild(info);
+            
+            stats.total++;
+            stats.loading++;
+            updateStats();
+            
+            return item;
+        }
+
+        function checkAllImages() {
+            stats = { total: 0, success: 0, error: 0, loading: 0 };
+            
+            Object.keys(imagePaths).forEach(category => {
+                const container = document.getElementById(`${category}-images`);
+                container.innerHTML = '';
+                
+                imagePaths[category].forEach(({ path, name }) => {
+                    const item = createImageItem(path, name, category);
+                    container.appendChild(item);
+                });
+            });
+        }
+
+        function updateStats() {
+            document.getElementById('total-count').textContent = stats.total;
+            document.getElementById('success-count').textContent = stats.success;
+            document.getElementById('error-count').textContent = stats.error;
+            document.getElementById('loading-count').textContent = stats.loading;
+        }
+
+        // Initialize on load
+        window.addEventListener('load', () => {
+            checkAllImages();
+        });
+    </script>
+</body>
+</html>

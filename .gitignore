@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Build output (Vercel 会自己 build，不需要提交)
+dist/
+dist-ssr/
+*.local
+
+# Environment / 环境变量（含密钥，绝对不能 push）
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional: 测试覆盖率（若有写测试）
+coverage/
+.nyc_output/
+
+# Cursor
+.cursor/

@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pokemon9aud.com/sitemap.xml
+
+# Disallow admin and private areas if any
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all public pages
+Allow: /
+Allow: /pokemon9-casino-review
+Allow: /pokemon9-casino-bonuses
+Allow: /pokemon9-casino-games
+Allow: /pokemon9-casino-registration
+Allow: /pokemon9-casino-payments
