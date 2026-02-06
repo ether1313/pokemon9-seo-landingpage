@@ -29,14 +29,13 @@ export default function HomePage() {
     { name: seoData?.title.split(':')[0] || 'Page', url: currentUrl },
   ] : undefined;
 
-  // Map paths to section IDs
+  // Map paths to section IDs (homepage / stays at top, no auto-scroll)
   const pathToSectionMap: Record<string, string> = {
     '/pokemon9-casino-review': 'casino-review',
     '/pokemon9-casino-registration': 'registration',
     '/pokemon9-casino-bonuses': 'bonuses',
     '/pokemon9-casino-games': 'games',
     '/pokemon9-casino-payments': 'payments',
-    '/': 'faq', // FAQ is on homepage
   };
 
   useEffect(() => {
