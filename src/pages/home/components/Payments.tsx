@@ -73,7 +73,7 @@ export default function Payments() {
         </h2>
         
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-8 sm:mb-12 text-center max-w-4xl mx-auto px-2">
-          POKEMON9 Casino supports various payment options tailored to Australian banking preferences, ensuring convenient deposits and withdrawals for local players.
+          PKM9 Casino supports various payment options tailored to Australian banking preferences, ensuring convenient deposits and withdrawals for local players.
         </p>
         
         <div className="bg-gradient-to-br from-[#1a2942] to-[#0f1f3a] rounded-xl sm:rounded-2xl p-4 sm:p-8 mb-6 sm:mb-8 border border-[#ffd700]/20">
@@ -134,7 +134,7 @@ export default function Payments() {
         <div className="mb-6 sm:mb-8">
           <img 
             src="/transaction.jpg" 
-            alt="Pokemon9 live transaction panel" 
+            alt="PKM9 live transaction panel" 
             className="w-full rounded-xl sm:rounded-2xl"
           />
         </div>

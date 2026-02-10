@@ -29,11 +29,11 @@ export default function Bonuses() {
         </div>
         
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-4 sm:mb-8 text-center px-2">
-          POKEMON9 <span className="text-[#ffd700]">No Deposit Bonus</span> and Promotions
+          PKM9 <span className="text-[#ffd700]">No Deposit Bonus</span> and Promotions
         </h2>
         
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-8 sm:mb-12 text-center max-w-4xl mx-auto px-2">
-          POKEMON9 Casino structures its promotional offerings to provide value across different player segments, with particular attention to welcome packages and ongoing rewards.
+          PKM9 Casino structures its promotional offerings to provide value across different player segments, with particular attention to welcome packages and ongoing rewards.
         </p>
         
         <div className="space-y-6 sm:space-y-12">

@@ -42,7 +42,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <span className="text-xl sm:text-2xl font-black text-white">POKEMON<span className="text-[#ffd700]">9</span></span>
+          <span className="text-xl sm:text-2xl font-black text-white">PKM<span className="text-[#ffd700]">9</span></span>
         </div>
         
         <div className="flex justify-center mb-6 sm:mb-8">
@@ -57,7 +57,7 @@ export default function Footer() {
         
         <div className="text-center text-gray-400 text-xs sm:text-sm">
           <p className="mb-3 sm:mb-4 px-2">
-            Please gamble responsibly. POKEMON9 Australia Online Casino is licensed by the Curacao Gaming Authority. Players must be 18+ years old.
+            Please gamble responsibly. PKM9 Australia Online Casino is licensed by the Curacao Gaming Authority. Players must be 18+ years old.
           </p>
         </div>
       </div>

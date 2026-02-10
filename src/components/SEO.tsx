@@ -23,9 +23,9 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = 'POKEMON9 Casino: Complete Gaming Platform for Australian Players',
-  description = 'POKEMON9 Casino - reliable gaming destination for Australian players with 800+ games, secure transactions, and no deposit bonus. Licensed by Curacao Gaming Authority.',
-  keywords = 'POKEMON9 Casino, Australian casino, online pokies, casino bonus, no deposit bonus, live casino, pokemon9, pokemon 9 casino',
+  title = 'PKM9 Casino (POKEMON9): Complete Gaming Platform for Australian Players',
+  description = 'PKM9 Casino (formerly POKEMON9) - reliable gaming destination for Australian players with 800+ games, secure transactions, and no deposit bonus. Licensed by Curacao Gaming Authority.',
+  keywords = 'PKM9 Casino, PKM9, pkm9 australia, POKEMON9 Casino, Australian casino, online pokies, casino bonus, no deposit bonus, live casino, pokemon9',
   canonical,
   ogTitle,
   ogDescription,
@@ -61,15 +61,15 @@ export default function SEO({
     updateMetaTag('description', description);
     updateMetaTag('keywords', keywords);
     updateMetaTag('robots', noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
-    updateMetaTag('author', 'POKEMON9 Casino');
+    updateMetaTag('author', 'PKM9 Casino');
     updateMetaTag('language', 'English');
     updateMetaTag('geo.region', 'AU');
     updateMetaTag('geo.placename', 'Australia');
     updateMetaTag('revisit-after', '7 days');
     updateMetaTag('rating', 'general');
     updateMetaTag('distribution', 'global');
-    updateMetaTag('copyright', 'POKEMON9 Casino');
-    updateMetaTag('application-name', 'POKEMON9 Casino');
+    updateMetaTag('copyright', 'PKM9 Casino');
+    updateMetaTag('application-name', 'PKM9 Casino');
     
     // Additional SEO meta tags
     updateMetaTag('format-detection', 'telephone=no');
@@ -95,7 +95,7 @@ export default function SEO({
     updateMetaTag('og:image:width', '1200', 'property');
     updateMetaTag('og:image:height', '630', 'property');
     updateMetaTag('og:image:alt', title, 'property');
-    updateMetaTag('og:site_name', 'POKEMON9 Casino', 'property');
+    updateMetaTag('og:site_name', 'PKM9 Casino', 'property');
     updateMetaTag('og:locale', 'en_AU', 'property');
     updateMetaTag('og:locale:alternate', 'en_US', 'property');
     

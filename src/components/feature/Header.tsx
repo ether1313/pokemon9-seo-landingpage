@@ -50,7 +50,7 @@ export default function Header() {
             <Link to="/" className="flex items-center">
               <img 
                 src="/logo/pokemon9-logo.png" 
-                alt="POKEMON9" 
+                alt="PKM9" 
                 className="h-14 w-auto"
               />
             </Link>

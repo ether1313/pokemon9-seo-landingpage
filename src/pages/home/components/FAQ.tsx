@@ -6,35 +6,35 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: 'How long does POKEMON9 casino account verification take?',
+      question: 'How long does PKM9 casino account verification take?',
       answer: 'Account verification typically completes within 1 hour after submitting required documents. Australian players need valid au phone number verification for the registration process.'
     },
     {
-      question: 'Is POKEMON9 Casino legal for Australian players?',
-      answer: 'POKEMON9 Casino operates under Curacao Gaming Authority licensing and accepts Australian players in compliance with applicable regulations. Players should verify local gambling laws in their jurisdiction.'
+      question: 'Is PKM9 Casino legal for Australian players?',
+      answer: 'PKM9 Casino operates under Curacao Gaming Authority licensing and accepts Australian players in compliance with applicable regulations. Players should verify local gambling laws in their jurisdiction.'
     },
     {
-      question: 'What is the minimum withdrawal amount at POKEMON9?',
+      question: 'What is the minimum withdrawal amount at PKM9?',
       answer: 'The minimum withdrawal amount is AUD 50 for most payment methods, with some e-wallet options allowing withdrawals as low as AUD 20.'
     },
     {
-      question: 'Can I play POKEMON9 Casino games on mobile devices?',
-      answer: 'Yes, POKEMON9 Casino offers full mobile compatibility through web browsers without requiring app downloads. All games and features function normally on smartphones and tablets.'
+      question: 'Can I play PKM9 Casino games on mobile devices?',
+      answer: 'Yes, PKM9 Casino offers full mobile compatibility through web browsers without requiring app downloads. All games and features function normally on smartphones and tablets.'
     },
     {
-      question: 'How do I claim the POKEMON9 no deposit bonus?',
+      question: 'How do I claim the PKM9 no deposit bonus?',
       answer: 'The no deposit bonus activates automatically upon successful account verification. Free spins appear in your account within 24 hours of verification completion.'
     },
     {
       question: 'What customer support options are available?',
-      answer: 'POKEMON9 Casino provides 24/7 live chat support and email assistance as well as whatsapp and telegram bonus group support. Response times average under 5 minutes for live chat and within 24 hours for email inquiries.'
+      answer: 'PKM9 Casino provides 24/7 live chat support and email assistance as well as whatsapp and telegram bonus group support. Response times average under 5 minutes for live chat and within 24 hours for email inquiries.'
     },
     {
-      question: 'Are there withdrawal limits at POKEMON9 Casino?',
+      question: 'Are there withdrawal limits at PKM9 Casino?',
       answer: 'Standard players can withdraw up to AUD 5,000 per transaction and AUD 20,000 per month. VIP members receive higher limits based on their status level.'
     },
     {
-      question: 'Which software providers power POKEMON9 Casino games?',
+      question: 'Which software providers power PKM9 Casino games?',
       answer: 'The casino features games from JILI, BOOONGO, CQ9 Gaming, Imperium Games, RICH Gaming, VPower, ACE333, Joker, and several other established providers ensuring quality and fairness.'
     }
   ];

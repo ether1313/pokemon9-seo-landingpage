@@ -1,14 +1,14 @@
 
 export default function WhyChooseUs() {
   const whyChooseFeatures = [
-    'New Register And Social Media Task Promoting',
-    'Deposit Bonus Up to 169.99',
+    'New Register and Social Media Task Promoting',
+    'Deposit Bonus Up to $169.99',
     'Weekly rebate 5% & Weekly Comission 5%',
-    'New Members Get Free Chips 10'
+    'New Members Get Free Chips $10'
   ];
 
   const vipProgramFeatures = [
-    'Deposit 30AUD Can Get One Spin',
+    'Deposit $30 Can Get One Spin',
     'Earn Golden Egg Point With Every Deposit',
     'Daily Check In Missions',
     'Active Players Qualify For The VIP Program With Extra VIP Bonus'
@@ -50,11 +50,11 @@ export default function WhyChooseUs() {
         </div>
         
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-4 sm:mb-8 text-center px-2">
-          Why Choose <span className="text-[#ffd700]">POKEMON9</span>?
+          Why Choose <span className="text-[#ffd700]">PKM9</span>?
         </h2>
         
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-8 sm:mb-12 text-center max-w-4xl mx-auto px-2">
-          Discover the exclusive benefits and rewards that make POKEMON9 Casino the premier choice for online gaming enthusiasts.
+          Discover the exclusive benefits and rewards that make PKM9 Casino the premier choice for online gaming enthusiasts.
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
@@ -63,7 +63,7 @@ export default function WhyChooseUs() {
               <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-br from-[#ff0000] to-[#cc0000] rounded-full flex items-center justify-center flex-shrink-0">
                 <i className="ri-star-line text-white text-xs sm:text-sm"></i>
               </div>
-              <span className="leading-tight">Why Choose Pokemon9?</span>
+              <span className="leading-tight">Why Choose PKM9?</span>
             </h3>
             
             <ul className="space-y-3 sm:space-y-4">

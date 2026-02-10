@@ -1,7 +1,7 @@
 
 export default function CasinoReview() {
   const specs = [
-    { label: 'License', value: 'Curacao Gaming Authority, Pagcor' },
+    { label: 'License', value: 'Curacao Gaming Authority & Pagcor' },
     { label: 'Minimum Deposit', value: 'AUD 20' },
     { label: 'Maximum Deposit', value: 'AUD 5,000' },
     { label: 'Supported Languages', value: 'English' },
@@ -34,12 +34,12 @@ export default function CasinoReview() {
         </div>
         
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-6 sm:mb-8 text-center">
-          POKEMON9 <span className="text-[#ffd700]">Casino Review</span>
+          PKM9 <span className="text-[#ffd700]">Casino Review</span>
         </h2>
         
         <div className="bg-gradient-to-br from-[#1a2942] to-[#0f1f3a] rounded-xl sm:rounded-2xl p-4 sm:p-8 mb-6 sm:mb-8 border border-[#ffd700]/20">
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-4 sm:mb-6">
-            POKEMON9 Casino operates as a fully licensed online gaming platform designed specifically for the Australian market. The casino focuses on providing a balanced selection of games while maintaining strict security protocols and responsible gaming practices.
+            PKM9 Casino operates as a fully licensed online gaming platform designed specifically for the Australian market. The casino focuses on providing a balanced selection of games while maintaining strict security protocols and responsible gaming practices.
           </p>
           
           {/* Mobile: Card layout, Desktop: Table layout */}
@@ -78,7 +78,7 @@ export default function CasinoReview() {
           </div>
           
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed mt-4 sm:mt-6">
-            The platform maintains compliance with international gaming standards while catering to local preferences. POKEMON9 Casino implements advanced encryption technology to protect user data and financial transactions.
+            The platform maintains compliance with international gaming standards while catering to local preferences. PKM9 Casino implements advanced encryption technology to protect user data and financial transactions.
           </p>
         </div>
       </div>

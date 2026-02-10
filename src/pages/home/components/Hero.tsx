@@ -132,8 +132,9 @@ export default function Hero() {
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-black mb-4 sm:mb-6 leading-tight">
-            <span className="block text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">POKEMON9</span>
+            <span className="block text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">PKM9</span>
             <span className="block mt-1 sm:mt-2 title-shimmer text-4xl sm:text-6xl lg:text-8xl">Casino Australia</span>
+            <span className="block text-sm sm:text-base lg:text-lg font-normal text-gray-400 mt-2">formerly POKEMON9</span>
             <span className="block text-lg sm:text-3xl lg:text-4xl mt-2 sm:mt-4 font-bold">
               <span className="text-[#ff0000]">Play</span>
               <span className="text-white"> 800+ Games </span>
@@ -142,7 +143,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-sm sm:text-lg lg:text-xl text-gray-300 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed px-2">
-            POKEMON9 Casino has established itself as a reliable gaming destination for Australian players seeking diverse entertainment options and secure transactions. This comprehensive platform combines modern technology with user-friendly features to deliver an engaging casino experience.
+            PKM9 Casino (formerly POKEMON9) has established itself as a reliable gaming destination for Australian players seeking diverse entertainment options and secure transactions. This comprehensive platform combines modern technology with user-friendly features to deliver an engaging casino experience.
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 mb-8 sm:mb-12 max-w-xl sm:max-w-none mx-auto">

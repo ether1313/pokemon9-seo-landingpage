@@ -27,7 +27,7 @@ export default function Registration() {
         </h2>
         
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-8 sm:mb-12 text-center max-w-4xl mx-auto px-2">
-          Creating an account at POKEMON9 Casino follows a straightforward three-step process designed to get players started quickly while ensuring security compliance.
+          Creating an account at PKM9 Casino follows a straightforward three-step process designed to get players started quickly while ensuring security compliance.
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
@@ -42,7 +42,7 @@ export default function Registration() {
             <div className="mb-4 sm:mb-6">
               <img 
                 src="/register.jpg" 
-                alt="POKEMON9 Casino registration form interface" 
+                alt="PKM9 Casino registration form interface" 
                 className="w-full rounded-lg"
               />
             </div>
@@ -75,20 +75,20 @@ export default function Registration() {
               <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-br from-[#3b4cca] to-[#2a3a9f] rounded-full flex items-center justify-center flex-shrink-0">
                 <i className="ri-login-box-line text-white text-xs sm:text-sm"></i>
               </div>
-              <span className="leading-tight">POKEMON9 Casino Login Features</span>
+              <span className="leading-tight">PKM9 Casino Login Features</span>
             </h3>
             
             <div className="mb-4 sm:mb-6">
               <img 
                 src="/login.jpg" 
-                alt="POKEMON9 secure login page with 2FA" 
+                alt="PKM9 secure login page with 2FA" 
                 className="w-full rounded-lg"
               />
             </div>
             
             <div className="space-y-3 sm:space-y-4 text-gray-300 text-xs sm:text-sm leading-relaxed">
               <p>
-              Once registered, users can access the POKEMON9 platform by entering their mobile number or username along with their password on the login page. Passwords must meet the required length of 6–20 characters.
+              Once registered, users can access the PKM9 platform by entering their mobile number or username along with their password on the login page. Passwords must meet the required length of 6–20 characters.
               </p>
               <p>
               If users forget their password, they may select the Forgot Password option to recover access to their account. New users who do not yet have an account can click REGISTER to proceed with account creation.

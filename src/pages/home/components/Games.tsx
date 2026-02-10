@@ -45,7 +45,7 @@ export default function Games() {
         </h2>
         
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-8 sm:mb-12 text-center max-w-4xl mx-auto px-2">
-          POKEMON9 Casino organizes its gaming library into clearly defined categories, making navigation simple for players with different preferences and experience levels.
+          PKM9 Casino organizes its gaming library into clearly defined categories, making navigation simple for players with different preferences and experience levels.
         </p>
         
         <div className="space-y-6 sm:space-y-12">
