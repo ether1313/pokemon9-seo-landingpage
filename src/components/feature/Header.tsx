@@ -75,7 +75,7 @@ export default function Header() {
 
           <div className="hidden lg:block">
             <a 
-              href="https://pokemon9.org/RFESTER88" 
+              href="https://pokemonau.net/RFESTER88" 
               className="cta-pulse inline-flex items-center gap-2 bg-gradient-to-r from-[#ffd700] to-[#ffed4e] text-[#0a1628] px-6 py-2.5 rounded-full font-bold transition-all duration-200 text-sm whitespace-nowrap cursor-pointer"
             >
               <span>Join Now</span>
@@ -122,7 +122,7 @@ export default function Header() {
               </Link>
             ))}
             <a 
-              href="https://pokemon9.org/RFESTER88" 
+              href="https://pokemonau.net/RFESTER88" 
               className="cta-pulse block bg-gradient-to-r from-[#ffd700] to-[#ffed4e] text-[#0a1628] px-6 py-2.5 rounded-full font-bold transition-all duration-200 text-sm text-center whitespace-nowrap cursor-pointer"
             >
               Join Now

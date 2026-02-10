@@ -106,7 +106,7 @@ export default function FAQ() {
         <div className="mt-8 sm:mt-12 text-center">
           <p className="text-gray-400 text-sm mb-4 sm:mb-6">Still have questions? Our support team is ready to help!</p>
           <a 
-            href="https://pokemon9.org/RFESTER88" 
+            href="https://pokemonau.net/RFESTER88" 
             className="cta-pulse inline-flex items-center gap-2 bg-gradient-to-r from-[#ffd700] to-[#ffed4e] text-[#0a1628] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-bold transition-all duration-200 text-sm sm:text-base whitespace-nowrap cursor-pointer"
           >
             <span>Contact Support</span>

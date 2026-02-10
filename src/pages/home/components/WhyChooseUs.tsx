@@ -109,7 +109,7 @@ export default function WhyChooseUs() {
             
             <div className="mt-6 sm:mt-8 text-center">
               <a 
-                href="https://pokemon9.org/RFESTER88" 
+                href="https://pokemonau.net/RFESTER88" 
                 className="cta-pulse inline-flex items-center gap-2 bg-gradient-to-r from-[#3b4cca] to-[#5a6fd6] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-bold transition-all duration-200 text-sm sm:text-base whitespace-nowrap cursor-pointer"
               >
                 <span>Join VIP Program</span>

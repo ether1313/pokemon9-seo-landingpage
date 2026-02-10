@@ -152,7 +152,7 @@ export default function Hero() {
           </div>
           
           <a 
-            href="https://pokemon9.org/RFESTER88" 
+            href="https://pokemonau.net/RFESTER88" 
             className="cta-pulse inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-[#ffd700] via-[#ffed4e] to-[#ffd700] text-[#0a1628] px-8 sm:px-12 py-3 sm:py-5 rounded-full font-black text-base sm:text-xl transition-all duration-300 whitespace-nowrap cursor-pointer border-2 border-[#ffd700]"
           >
             <span>Play Now</span>
